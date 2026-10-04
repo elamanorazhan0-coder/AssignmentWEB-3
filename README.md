@@ -1,4 +1,11 @@
 Orazkhan Yelaman IT-2502
+
+## Deployment
+
+This is a static HTML/CSS website. Netlify should publish the repository root (`.`) with no build command, as configured in `netlify.toml`. The homepage must be named `index.html` so the site opens at `/`.
+
+After deploying these changes, check that the deploy's file explorer contains `index.html` and `style (1).css` at the top level, then open the site's root URL.
+
 Task 0. Responsive Typography
 Create a simple webpage with headings and paragraphs and use media queries to change font sizes for mobile, tablet and desktop.
 <img width="1096" height="305" alt="task0" src="https://github.com/user-attachments/assets/4b567910-c2bd-45e9-acc8-1905d3b40b1b" />
