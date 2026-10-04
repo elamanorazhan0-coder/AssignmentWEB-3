@@ -1,0 +1,114 @@
+html { scroll-padding-top: 70px; }   /* so the navbar does not cover the titles */
+
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+section { padding: 30px 0; border-bottom: 1px solid #ccc; }
+
+.column-black { background-color: #000; }
+.column-gray { background-color: #6c757d; }
+.column-dark-blue { background-color: #001f3f; }
+
+.navbar-toggler,
+.navbar-collapse.collapsing {
+  transition: none !important;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus {
+  border: 0;
+  box-shadow: none;
+  outline: 0;
+}
+
+/* Responsive typography */
+/* mobile */
+.typo h1 { font-size: 22px; }
+.typo h2 { font-size: 18px; }
+.typo p  { font-size: 14px; }
+
+/* tablet */
+@media (min-width: 600px) {
+  .typo h1 { font-size: 32px; }
+  .typo h2 { font-size: 26px; }
+  .typo p  { font-size: 18px; }
+}
+
+/* desktop */
+@media (min-width: 1000px) {
+  .typo h1 { font-size: 46px; }
+  .typo h2 { font-size: 34px; }
+  .typo p  { font-size: 22px; }
+}
+
+/* Layout with media queries only */
+.mq-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mq-box {
+  box-sizing: border-box;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding: 50px 10px;
+  width: 100%;
+  flex: 0 0 100%;
+}
+.mq-box1 { background-color: rgb(126, 54, 41); }
+.mq-box2 { background-color: rgb(75, 162, 234); }
+.mq-box3 { background-color: rgb(15, 246, 115); }
+
+/* tablet: 2 in a row */
+@media (min-width: 600px) {
+  .mq-box {
+    width: calc(50% - 5px);
+    flex: 0 0 calc(50% - 5px);
+  }
+}
+
+/* desktop: 3 in a row */
+@media (min-width: 1000px) {
+  .mq-box {
+    width: calc(33.33% - 7px);
+    flex: 0 0 calc(33.33% - 7px);
+  }
+}
+
+/* Portfolio */
+.sidebar {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* mobile (default) */
+.section-title { font-size: 22px; }
+.sidebar p     { font-size: 14px; }
+.card-text     { font-size: 14px; }
+footer         { font-size: 12px; }
+.hide-on-mobile { display: none; }      /* hidden on mobile */
+
+/* tablet */
+@media (min-width: 768px) {
+  .section-title { font-size: 28px; }
+  .sidebar p     { font-size: 16px; }
+  .card-text     { font-size: 16px; }
+  footer         { font-size: 14px; }
+  .hide-on-mobile { display: block; }
+}
+
+/* desktop */
+@media (min-width: 992px) {
+  .section-title { font-size: 34px; }
+  .sidebar p     { font-size: 18px; }
+  .card-text     { font-size: 17px; }
+  footer         { font-size: 16px; }
+  .sidebar { margin-top: 55px; }
+}
